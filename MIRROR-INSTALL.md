@@ -28,5 +28,17 @@ pnpm install
 
 ## Notes
 
-- Tag `v2026.3.8` is intended to map to npm version `2026.3.8`.
+- Tag `v2026.3.8` maps to npm version `2026.3.8`.
+- Compatibility refs are also published:
+  - `#2026.3.8` (lightweight tag)
+  - `#release-2026.3.8` (branch)
+  - `#0eb1dfe7df96f3a8678eb6a1f4701c6f5266868c` (exact commit)
 - This repo contains extracted package files (same layout as npm tarball contents).
+
+## Troubleshooting
+
+If your environment fails to resolve a tag (e.g. "could not resolve ... to a commit"), pin to commit SHA directly:
+
+```bash
+pnpm add github:jimmylegendary/openclaw-npm-mirror#0eb1dfe7df96f3a8678eb6a1f4701c6f5266868c
+```
